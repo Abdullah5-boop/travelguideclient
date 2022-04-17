@@ -14,7 +14,7 @@ const SingOut = () => {
     const [error, seterror] = useState('');
     const navigate = useNavigate()
     const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth);
-    const { signInWithGoogle } = useFirebase();
+    // const { signInWithGoogle } = useFirebase();
     const provider = new GoogleAuthProvider()
 
 
