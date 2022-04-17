@@ -1,0 +1,25 @@
+.loginformat form {
+
+    width: 800px;
+
+}
+
+.formate {
+    display: flex;
+    justify-content: center;
+
+}
+@media only screen and (max-width: 600px){
+    .loginformat form {
+
+        width: 350px;
+    
+    }
+    
+    .formate {
+        display: flex;
+        justify-content: center;
+    
+    }
+	
+}
