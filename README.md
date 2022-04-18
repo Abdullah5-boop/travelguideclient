@@ -4,6 +4,6 @@
 * Email verification
 * protected route
 * Travele guide show 
-* Here we use react router, bootstap, firebase, firebaseHook,email verification
+* Here we use react router, bootstap, firebase, firebaseHook,email verification,checkout
 https://p-hero-assingment.web.app/
  
