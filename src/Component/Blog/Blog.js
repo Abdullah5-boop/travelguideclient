@@ -8,7 +8,7 @@ const Blog = () => {
                 1. Authentication verifies who the user is.
                 2. Authentication works through passwords, one-time pins, biometric information, and other information provided or entered by the user.
                 3. Authentication is the first step of a good identity and access management process.
-                4. Authentication is visible to and partially changeable by the.
+                4. Authentication is visible to and partially changeable by the user.
 
                 Authorization
                 1. Authorization determines what resources a user can access.
