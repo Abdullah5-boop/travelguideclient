@@ -24,12 +24,14 @@ const SingOut = () => {
         event.preventDefault();
         if (confirm === password) {
             createUserWithEmailAndPassword(email, password)
-            sendEmailVerification(auth.currentUser)
+           
                 .then(() => {
                     // Email verification sent!
+                    console.log("email is sent")
                     // ...
                 });
             // seterror('')
+            sendEmailVerification(auth.currentUser)
         }
         else {
             const a = "passworld does not match";
@@ -50,10 +52,21 @@ const SingOut = () => {
 
 
     const handlegoogle = () => {
+        const user1 = auth.currentUser;
         signInWithPopup(auth, provider)
+        
             .then(result => {
                 console.log(result.user)
+                if(result)
+                {
+                    navigate('/home') 
+                }
             })
+            if(user1)
+            {
+                navigate('/home')
+            }
+            sendEmailVerification(auth.currentUser)
     }
     if (user) {
         navigate('/home')
